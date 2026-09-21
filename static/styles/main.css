@@ -65,3 +65,73 @@ div.form form .submit:focus-visible {
     outline: 3px solid #a5b4fc;
     outline-offset: 2px;
 }
+
+div.form form .terms {
+    display: flex;
+    align-items: flex-start;
+    width: 400px;
+    margin-bottom: 16px;
+}
+
+div.form form input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+    display: grid;
+    place-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    background-color: #434141;
+    border: 1px solid #868488;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+div.form form input[type="checkbox"]::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    margin-top: -2px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.15s;
+}
+
+div.form form input[type="checkbox"]:checked {
+    background-color: var(--theme-accent);
+}
+
+div.form form input[type="checkbox"]:checked::after {
+    transform: rotate(45deg) scale(1);
+}
+
+div.form form input[type="checkbox"]:focus-visible {
+    outline: 3px solid #a5b4fc;
+    outline-offset: 2px;
+}
+
+div.form form .terms label {
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+div.form form .terms {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 400px;
+    margin-bottom: 16px;
+}
+
+div.form form .terms label {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    cursor: pointer;
+}
