@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.form form label,
+div.form form input {
+    display: block;
+}
+
+div.form form input {
+    box-sizing: border-box;
+    width: 400px;
+    height: 35px;
+    margin-bottom: 16px;
+    background-color: #272727;
+    border: 0px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+div.form form label {
+    margin-bottom: 6px;
+}
+
+div.form {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+div.form form {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 34px;
+    background: #434141;
+    color: #ffffff
+}
+
+div.form form .submit {
+    background: #272727;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    height: 48px;
+    padding: 0 20px;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+div.form form .submit:hover {
+    background: #7c1fd0;
+}
+
+div.form form .submit:active {
+    transform: scale(0.97);
+}
+
+div.form form .submit:focus-visible {
+    outline: 3px solid #a5b4fc;
+    outline-offset: 2px;
+}

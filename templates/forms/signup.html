@@ -1,0 +1,13 @@
+{% extends "forms/base.html" %}
+{% block form %}
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+<label for="password">Password:</label>
+<input type="text" id="password" name="password">
+<label for="invite">Invite code:</label>
+<input type="text" id="invite" name="invite">
+<input type="checkbox" id="terms" name="terms">
+<label for="terms">I have read and agree to terms of service and Privacy Policy of Dusk</label><br>
+<input type="submit" value="Sign up" class="submit">
+<script src="/static/scripts/form.js"></script>
+{% endblock %}
