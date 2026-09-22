@@ -14,10 +14,9 @@ div.form form input {
     width: 400px;
     height: 35px;
     margin-bottom: 16px;
-    background-color: #272727;
+    background-color: var(--theme-background-2);
     border: 0px;
     border-radius: 4px;
-    color: #ffffff;
 }
 div.form form label {
     margin-bottom: 6px;
@@ -31,15 +30,14 @@ div.form {
 }
 
 div.form form {
-    border: 2px solid #333;
     border-radius: 8px;
     padding: 34px;
-    background: #434141;
-    color: #ffffff
+    background: var(--theme-background);
+    color: var(--theme-foreground)
 }
 
 div.form form .submit {
-    background: #272727;
+    background: var(--theme-background-2);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -54,7 +52,7 @@ div.form form .submit {
 }
 
 div.form form .submit:hover {
-    background: #7c1fd0;
+    background: var(--theme-accent);
 }
 
 div.form form .submit:active {
@@ -62,7 +60,6 @@ div.form form .submit:active {
 }
 
 div.form form .submit:focus-visible {
-    outline: 3px solid #a5b4fc;
     outline-offset: 2px;
 }
 
@@ -83,8 +80,8 @@ div.form form input[type="checkbox"] {
     height: 25px;
     margin: 0;
     padding: 0;
-    background-color: #434141;
-    border: 1px solid #868488;
+    background-color: var(--theme-background);
+    border: 1px solid var(--theme-checkbox-border);
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.2s;
@@ -110,7 +107,6 @@ div.form form input[type="checkbox"]:checked::after {
 }
 
 div.form form input[type="checkbox"]:focus-visible {
-    outline: 3px solid #a5b4fc;
     outline-offset: 2px;
 }
 
