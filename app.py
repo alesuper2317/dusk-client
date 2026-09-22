@@ -10,4 +10,8 @@ def root():
 def signup():
     return render_template("forms/signup.html")
 
+@app.route("/login")
+def login():
+    return render_template("forms/login.html")
+
 app.run(host="0.0.0.0", port=80, debug=True)

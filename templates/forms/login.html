@@ -1,0 +1,10 @@
+{% extends "forms/base.html" %}
+{% block form %}
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+<label for="password">Password:</label>
+<input type="text" id="password" name="password">
+<input type="submit" value="Login" class="submit">
+<p>Don't have an account? <a href="/signup">Sign Up</a></p>
+<script src="/static/scripts/form.js"></script>
+{% endblock %}
