@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="form">
-    <form id="form">
+    <form id="form" onsubmit="{% block submit %}{% endblock %}">
         {% block form %}
         {% endblock %}
     </form>

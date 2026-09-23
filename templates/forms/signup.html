@@ -1,16 +1,18 @@
 {% extends "forms/base.html" %}
+{% block submit %}form_signup();{% endblock %}
 {% block form %}
-<label for="username">Username:</label>
+<label for="username">Username*</label>
 <input type="text" id="username" name="username">
-<label for="password">Password:</label>
+<label for="password">Password*</label>
 <input type="text" id="password" name="password">
-<label for="invite">Invite code:</label>
+<label for="invite">Invite code*</label>
 <input type="text" id="invite" name="invite">
 <div class="terms">
     <input type="checkbox" id="terms" name="terms">
     <label for="terms">I have read and agree to terms of service and Privacy Policy of Dusk</label>
 </div>
 <input type="submit" value="Sign up" class="submit">
+<div id="error-message" class="error-message"></div>
 <p>Already have an account? <a href="/login">Login</a></p>
 <script src="/static/scripts/form.js"></script>
 {% endblock %}

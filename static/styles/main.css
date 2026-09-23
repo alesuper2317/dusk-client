@@ -143,3 +143,8 @@ div.form form p a:hover {
 div.form form p {
     margin-bottom: 0px;
 }
+
+div.form form .error-message {
+    color: var(--theme-error-message);
+    display: none;
+}
