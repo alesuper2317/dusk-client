@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    background-color: var(--theme-body);
 }
 
 div.form form label,
@@ -9,20 +11,52 @@ div.form form input {
     display: block;
 }
 
+/*Login and signup input*/
 div.form form input {
     color: #fff;
     box-sizing: border-box;
-    width: 400px;
     height: 35px;
-    margin-bottom: 16px;
     background-color: var(--theme-background-2);
     border: 0px;
     border-radius: 4px;
+    width: 100%;
+    padding-right: 40px;
 }
+
+/*Password wrapper -->*/
+div.form form .password-wrapper {
+    position: relative;
+    width: 400px;
+    margin-bottom: 16px;
+}
+
+div.form form .password-wrapper button {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+div.form form .password-wrapper button .material-icons {
+    font-size: 20px;
+    color: var(--theme-foreground);
+    vertical-align: middle;
+}
+/*<--*/
+
+/*Login and signup input label*/
 div.form form label {
     margin-bottom: 6px;
 }
 
+/*Login and signup <div>*/
 div.form {
     margin: 0;
     min-height: 100vh;
@@ -30,6 +64,7 @@ div.form {
     place-items: center;
 }
 
+/*Login and signup gray box*/
 div.form form {
     border-radius: 12px;
     padding: 34px;
@@ -37,9 +72,10 @@ div.form form {
     color: var(--theme-foreground)
 }
 
+/*Login and signup button -->*/
 div.form form .submit {
     background: var(--theme-background-2);
-    color: #fff;
+    color: var(--theme-foreground);
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -62,12 +98,16 @@ div.form form .submit:active {
 div.form form .submit:focus-visible {
     outline-offset: 2px;
 }
+/*<--*/
 
+/*Terms of service label + checkbox -->*/
 div.form form .terms {
     display: flex;
     align-items: flex-start;
     width: 400px;
     margin-bottom: 16px;
+    align-items: center;
+    gap: 14px;
 }
 
 div.form form input[type="checkbox"] {
@@ -116,14 +156,6 @@ div.form form .terms label {
     cursor: pointer;
 }
 
-div.form form .terms {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    width: 400px;
-    margin-bottom: 16px;
-}
-
 div.form form .terms label {
     margin: 0;
     padding: 0;
@@ -131,7 +163,9 @@ div.form form .terms label {
     line-height: 1.4;
     cursor: pointer;
 }
+/*<--*/
 
+/*Login and signup questions -->*/
 div.form form p a {
     color: var(--theme-foreground);
 }
@@ -143,7 +177,9 @@ div.form form p a:hover {
 div.form form p {
     margin-bottom: 0px;
 }
+/*<--*/
 
+/*error message*/
 div.form form .error-message {
     color: var(--theme-error-message);
     display: none;

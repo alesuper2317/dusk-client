@@ -4,7 +4,12 @@
 <label for="username">Username*</label>
 <input type="text" id="username" name="username">
 <label for="password">Password*</label>
-<input type="text" id="password" name="password">
+<div class="password-wrapper">
+    <input type="password" id="password" name="password">
+    <button type="button" id="toggle-password">
+        <span class="material-icons" id="eye-icon">visibility</span>
+    </button>
+</div>
 <label for="invite">Invite code*</label>
 <input type="text" id="invite" name="invite">
 <div class="terms">
