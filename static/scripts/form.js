@@ -43,3 +43,12 @@ async function form_login() {
         show_error(data.error)
     }
 }
+
+document.getElementById("toggle-password").addEventListener("click", function() {
+    const passwordInput = document.getElementById("password");
+    const eyeIcon = document.getElementById("eye-icon");
+    const isPassword = passwordInput.type === "password";
+
+    passwordInput.type = isPassword ? "text" : "password";
+    eyeIcon.textContent = isPassword ? "visibility_off" : "visibility";
+});

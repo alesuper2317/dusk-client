@@ -184,3 +184,36 @@ div.form form .error-message {
     color: var(--theme-error-message);
     display: none;
 }
+
+
+/*Home page container*/
+div.container {
+    position: fixed;
+    inset: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+div.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1;
+}
+
+div.rectangle {
+    background-color: var(--theme-background);
+    border: 1px;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+div.columns .rectangle:nth-child(1) {
+    flex: 0 0 400px;
+}
+
+div.columns .rectangle:nth-child(2) {
+    flex: 1;
+}
